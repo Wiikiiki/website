@@ -1,3 +1,24 @@
+// 顶部导航、回到顶部
+const headerEl = document.querySelector("header")
+const scrollToTop = document.querySelector(".scrollToTop")
+
+window.addEventListener("scroll", () => {
+  let height = headerEl.getBoundingClientRect().height
+  if (window.pageYOffset - height > 800) {
+    if (!headerEl.classList.contains("sticky")) {
+      headerEl.classList.add("sticky")
+    } 
+  }else {
+    headerEl.classList.remove("sticky")
+  }
+
+  if (window.pageYOffset > 2000) {
+    scrollToTop.style.display = "block";
+  } else {
+    scrollToTop.style.display = "none"
+  }
+})
+
 // 轮播图
 const glide = new Glide(".glide")
 const captionsEl = document.querySelectorAll('.slide-caption')
