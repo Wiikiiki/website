@@ -156,7 +156,7 @@ header.sticky nave i {
 }
 
 
-/* 关于我们 */
+/* 内容通用样式 */
 .content-wrapper {
   display: flex;
   align-items: center;
@@ -206,6 +206,8 @@ section {
   color: var(--text-color-dark-gray);
 }
 
+
+/* 关于我们 */
 .about-us {
   padding-bottom: 32px;
 }
@@ -215,6 +217,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 126px 26px;
   column-gap: 5vw;
+  /* align-items: center; */
 }
 
 .feature {
