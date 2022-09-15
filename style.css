@@ -209,7 +209,7 @@ section {
 
 /* 关于我们 */
 .about-us {
-  padding-bottom: 32px;
+  padding-bottom: 80px;
 }
 
 .features {
@@ -352,7 +352,7 @@ section {
 .team-members {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 24px;
+  column-gap: 5vw;
   margin-top: 86px;
 }
 
@@ -371,7 +371,7 @@ section {
 }
 
 .profile-image img {
-  width: 100%;
+  width: 200px;
   height: 264px;
   object-fit: cover;
   object-position: top center;
