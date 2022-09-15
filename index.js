@@ -110,6 +110,12 @@ const scroll = new SmoothScroll('nav a[href*="#"], .scrollToTop a[href*="#"]', {
   offset: 80
 })
 
+document.addEventListener("scrollStart", () => {
+  if (headerEl.classList.contains("open")) {
+    headerEl.classList.remove("open")
+  }
+})
+
 const expoloreBtnEls = document.querySelectorAll(".explore-btn")
 
 expoloreBtnEls.forEach( expoloreBtnEl => { 
@@ -117,3 +123,10 @@ expoloreBtnEls.forEach( expoloreBtnEl => {
     scroll.animateScroll(document.querySelector("#about-us"))
   })
 });
+
+
+// 顶部导航折叠按钮
+const burgerEl = document.querySelector(".burger")
+burgerEl.addEventListener("click", () => {
+  headerEl.classList.toggle("open")
+})
