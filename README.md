@@ -2,8 +2,8 @@
 
 **特点：**
 
-- 使用 HTML, CSS, JavaScript 实现网站的结构、样式与逻辑\
-- 利用 Grid 栅格布局，实现响应式网页\
+- 使用 HTML, CSS, JavaScript 实现网站的结构、样式与逻辑
+- 利用 Grid 栅格布局，实现响应式网页
 - 利用 smooth-scroll, glide, isotope 等 js 库，实现页面的流畅滑动、图片的排列筛选功能
 
 **内容：**\
